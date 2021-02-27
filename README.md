@@ -11,7 +11,9 @@ A simple Laravel Docker image.
 
 </div>
 
-This image uses the `justintime50/nginx-php` docker image as its base which contains most everything a Laravel app would need out of the box. This image extends on the base by linking the storage directory, copying the project over from `/src`, setting permissions, and clearing cache for Laravel.
+This image uses the `justintime50/nginx-php` docker image as its base which contains most everything a Laravel app would need out of the box. This image extends on the base by importing the correct nginx config needed for Laravel.
+
+See the `example` directory for additional ways to extend this in your local project by linking the storage directory, copying the project over from `/src`, setting permissions, and clearing cache for Laravel.
 
 ## Install
 
